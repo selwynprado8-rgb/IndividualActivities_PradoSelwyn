@@ -1,0 +1,92 @@
+# FINAL ACTIVITY #1 - 
+
+print("=== Part 1: Create Data Structures ===\n")
+
+# 1. Tuple of 5 favorite fruits
+fruits = ("apple", "banana", "mango", "grapes", "orange")
+print("Tuple of fruits:", fruits)
+
+# 2. List of 5 daily tasks
+tasks = ["wake up", "eat breakfast", "go to school", "study", "playing online games",  "sleep"]
+print("List of tasks:", tasks)
+
+# 3. Set of unique numbers
+numbers = {1, 2, 3, 4, 5}
+print("Set of numbers:", numbers)
+
+# 4. Dictionary (Student info)
+student = {
+    "name": "Selwyn",
+    "age": 18,
+    "course": "Bachelor Science Information Technology"
+}
+print("Student dictionary:", student)
+
+print("\n=== Part 2: Manipulation Challenge ===\n")
+
+# ================= LIST TASKS =================
+print("--- List Tasks ---")
+tasks = ["wake up", "eat breakfast", "go to school", "study", "playing online games", "sleep"]
+
+# Add a new task
+tasks.append("exercise")
+print("After adding 'exercise':", tasks)
+
+# Remove one task
+tasks.remove("study")
+print("After removing 'study':", tasks)
+
+# Sort the list
+tasks.sort()
+print("After sorting:", tasks)
+
+# ================= TUPLE TASKS =================
+print("\n--- Tuple Tasks ---")
+fruits = ("apple", "banana", "mango", "grapes", "orange")
+print("Original tuple:", fruits)
+
+print("Trying to change tuple... (This will cause ERROR)")
+# fruits[0] = "strawberry"   # ← Remove the # if you want to see the error
+
+print("Tuples cannot be changed. They are immutable.")
+
+# ================= SET TASKS =================
+print("\n--- Set Tasks ---")
+numbers = {1, 2, 3, 4, 5}
+
+# Add a number
+numbers.add(6)
+print("After adding 6:", numbers)
+
+# Remove a number
+numbers.remove(3)
+print("After removing 3:", numbers)
+
+# Show duplicates are removed
+numbers.add(5)
+numbers.add(5)
+print("After trying to add 5 twice:", numbers)
+print("Sets automatically remove duplicates.")
+
+# ================= DICTIONARY TASKS =================
+print("\n--- Dictionary Tasks ---")
+student = {
+    "name": "Selwyn",
+    "age": 18,
+    "course": "Bachelor Science Information Technology"
+}
+
+# Add new key "grade"
+student["grade"] = "1"
+
+# Update age to 19
+student["age"] = 19
+
+print("Updated student info:", student)
+
+# Print all keys and values
+print("\nAll keys and values:")
+for key, value in student.items():
+    print(key, ":", value)
+
+print("\n=== Activity Finished ===")
