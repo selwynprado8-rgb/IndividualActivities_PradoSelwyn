@@ -1,0 +1,61 @@
+# LIST
+print("=== LIST ===")
+my_list = [5, 2, 9, 1]
+
+# Add 1 new item
+my_list.append(7)
+print("After adding:", my_list)
+
+# Remove 1 item
+my_list.remove(2)
+print("After removing:", my_list)
+
+# Sort the list
+my_list.sort()
+print("After sorting:", my_list)
+
+
+# TUPLE
+print("\n=== TUPLE ===")
+my_tuple = (10, 20, 30)
+
+try:
+    # Try modifying one element
+    my_tuple[0] = 99
+except TypeError as e:
+    print("Error:", e)
+    print("Explanation: Tuples cannot be changed (immutable).")
+
+
+# SET
+print("\n=== SET ===")
+my_set = {1, 2, 3}
+
+# Add a value
+my_set.add(4)
+
+# Remove a value
+my_set.remove(2)
+
+# Print updated set
+print("Updated set:", my_set)
+
+
+# DICTIONARY
+print("\n=== DICTIONARY ===")
+my_dict = {
+    "name": "Selwyn",
+    "age": 18
+}
+
+# Add new key "grade"
+my_dict["grade"] = "1"
+
+# Update "age"
+my_dict["age"] = 19
+
+# Print all keys
+print("Keys:", my_dict.keys())
+
+# Optional: print full dictionary
+print("Updated dictionary:", my_dict)
