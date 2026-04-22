@@ -1,0 +1,74 @@
+# ===============================
+# LIST ACTIVITIES 
+# ===============================
+
+print("=== Activity 1: Create a List ===")
+fruits = ["apple", "banana", "cherry"]
+print(fruits)
+
+
+print("\n=== Activity 2: Access Items ===")
+print("First item:", fruits[0])
+print("Last item:", fruits[-1])
+
+
+print("\n=== Activity 3: List Length ===")
+colors = ["red", "blue", "green", "yellow"]
+print("Number of colors:", len(colors))
+
+
+print("\n=== Activity 4: Change Item ===")
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "orange"
+print(fruits)
+
+
+print("\n=== Activity 5: Add Items ===")
+fruits = ["apple", "banana"]
+fruits.append("mango")
+fruits.insert(1, "grape")
+print(fruits)
+
+
+print("\n=== Activity 6: Remove Items ===")
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+fruits.pop()
+print(fruits)
+
+
+print("\n=== Activity 7: For Loop ===")
+animals = ["dog", "cat", "bird"]
+for animal in animals:
+    print(animal)
+
+
+print("\n=== Activity 8: With Index ===")
+numbers = [10, 20, 30]
+for i in range(len(numbers)):
+    print(i, ":", numbers[i])
+
+
+print("\n=== Activity 9: Check if Item Exists ===")
+fruits = ["apple", "banana", "cherry"]
+if "banana" in fruits:
+    print("Yes, banana is in the list")
+else:
+    print("Not in the list")
+
+
+print("\n=== Activity 10: Sorting ===")
+numbers = [5, 2, 9, 1]
+numbers.sort()
+print("Ascending:", numbers)
+
+numbers.sort(reverse=True)
+print("Descending:", numbers)
+
+
+print("\n=== Activity 11: Copy List ===")
+list1 = ["a", "b", "c"]
+list2 = list1.copy()
+
+print("Original:", list1)
+print("Copy:", list2)
