@@ -1,0 +1,45 @@
+# Activity 1: Remove Duplicates
+numbers = [1, 2, 2, 3, 4, 4, 5]
+
+unique_numbers = set(numbers)
+print("Activity 1 - Unique values:", unique_numbers)
+
+
+# Activity 2: Add and Remove
+fruits = {"apple", "banana"}
+
+# Add "orange"
+fruits.add("orange")
+
+# Remove "banana"
+fruits.remove("banana")
+
+print("Activity 2 - Updated fruits:", fruits)
+
+
+# Activity 3: Set Operations
+A = {1, 2, 3}
+B = {3, 4, 5}
+
+# Union (all values)
+union = A.union(B)
+
+# Intersection (common values)
+intersection = A.intersection(B)
+
+print("Activity 3 - Union:", union)
+print("Activity 3 - Intersection:", intersection)
+
+
+# Activity 4: Common Students
+classA = {"John", "Ana", "Mark"}
+classB = {"Ana", "Mark", "Liza"}
+
+# Students in BOTH classes
+both = classA.intersection(classB)
+
+# ALL students
+all_students = classA.union(classB)
+
+print("Activity 4 - Students in both classes:", both)
+print("Activity 4 - All students:", all_students)
